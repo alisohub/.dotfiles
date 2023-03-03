@@ -719,3 +719,60 @@ f nushe
 git checkout -b test-nu-env
 nvim .
 clear
+nvim .
+git push origin
+git push -u origin main
+curl -u USERNAME:TOKEN https://api.github.com/user
+curl -u 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  https://api.github.com/aliso
+f dot
+git push -u origin main
+git push origin
+nu
+clear
+ft
+mkdir dddddddddddddddddddddddddddddddddddddddddddddddddddddds
+cd dddddddddddddddddddddddddddddddddddddddddddddddddddddds/
+ft
+clear
+cd ..
+rm -r dddddddddddddddddddddddddddddddddddddddddddddddddddddds/
+clear
+git status -s
+f nushel
+nvim .gitignore
+clear
+git checkout -b tmux-nerd-icons
+f tmux
+nvim .tmux.conf
+()
+nvim
+:q
+clear
+nvim .
+:q
+ft
+f do
+git status
+git branch
+nvim .
+clear
+nvim
+f tmux
+git restore .tmux.conf
+nvim
+:q
+nvim
+nivm .tmux.co
+nvim .tmux.conf
+:q
+clear
+ft
+clear
+nvim
+clear
+ft
+clear
+z 
+f
+ft
+f dot
