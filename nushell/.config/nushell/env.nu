@@ -62,6 +62,10 @@ let-env NU_PLUGIN_DIRS = [
 let-env PATH = ($env.PATH | split row (char esep) | prepend '.local/bin')
 let-env PATH = ($env.PATH | split row (char esep) | prepend '.cargo/bin')
 
+let-env PROMPT_INDICATOR_VI_INSERT = ""
+let-env PROMPT_INDICATOR_VI_NORMAL = ""
+let-env PROMPT_MULTILINE_INDICATOR = "::: "
+
 zoxide init nushell | save -f ~/.zoxide.nu
 
 mkdir ~/.cache/starship

@@ -672,3 +672,50 @@ nvim .
 clear
 nvim .
 clear
+nvim .
+clear
+nvim .
+clear
+ft
+clear
+tmux a
+f dot
+sudo dnf install gpick
+clear
+nvim .
+f nvom
+f nvim
+clear
+nvim .
+nvim 
+rr
+sk
+clear
+f dot
+sk
+clear
+ft
+sk
+rr
+rr
+ft 
+f dot
+nvim README.md
+f nvim
+nvim /
+nvim .
+f nushe
+nvim .
+clea
+clear
+f tmux
+clear
+f dot
+:w
+clear
+f tele
+clear
+f nushe
+git checkout -b test-nu-env
+nvim .
+clear
