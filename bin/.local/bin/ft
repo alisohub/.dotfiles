@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ $# -eq 0 ]]; then
-    session_name=$(basename "$PWD")
+    session_name=$(basename "$PWD" | sed 's/^\./_/g' )
 else
     session_name="$1"
 fi
@@ -11,7 +11,7 @@ tmux has-session -t=$session_name 2> /dev/null
 
 # 2. Create the session if it doesn't exists.
 if [[ $? -ne 0 ]]; then
-    TMUX='' tmux new-session -s "$session_name"
+    TMUX='' tmux new-session -d -s "$session_name"
 fi
 
 # 3. Attach if outside of tmux, switch if you're in tmux.

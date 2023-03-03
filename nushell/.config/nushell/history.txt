@@ -1,0 +1,674 @@
+clear
+ls
+ls -a
+la
+ls -a
+zoxide
+zoxide init 
+zoxide init nushell
+cd .dotfiles/
+cd nushell/
+cd .config/
+cd nushell/
+nvim .
+nu
+clear
+nu
+sudo nvim /etc/libinput.conf
+la
+ls -a /etc
+ls -f /etc | find libinpuy
+ls -f /etc | find libinput
+ls -lf /etc | find libinput
+sudo chmod +w +r /etc/libinput.conf
+sudo chmod +w /etc/libinput.conf
+sudo chmod +r /etc/libinput.conf
+ls -lf /etc | find libinput
+nu
+t
+z
+cd .dotfiles/
+cd nushell/
+cd .config/nushell/
+ls
+nvim nu-env.nu
+nvim ~/.tmux
+nvim /&HOME/.tmux
+nvim /$HOME/.tmux
+nvim $HOME/.tmux
+z 
+nvim .tmux
+nvim .tmux.conf
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# type this in terminal if tmux is already running
+tmux source ~/.tmux.conf
+t
+clear
+nu
+clear
+nu --banner
+clear
+sudo dnf install streamlink
+sudo dnf update
+dnf --help
+dnf --help | find -y
+dnf --help | find "-y"
+cd alacritty/
+cd .config/alacritty/
+t do
+clear
+tmux
+nvim alacritty.yml
+:q
+t
+z ala
+nvim alacritty.yml
+clear
+nvim alacritty.yml
+nvim alacritty.yml
+cd ..
+git init
+git config --global init.defaultBranch main
+git branch -m main
+clear
+git status
+nvim
+t ala
+z ala
+nvim alacritty.yml
+clear
+nvim
+tmux
+cd personal/
+touch README.md
+nvim README.md
+t
+cd Downloads/
+git clone https://gitlab.com/warningnonpotablewater/libinput-config.git
+meson build
+cd build
+# meson configure -Dnon_glibc=true
+# meson configure -Dshitty_sandboxing=true
+ninja
+ls
+cd ..
+ls
+rm -r build/
+cd libinput-config/
+ls
+meson build
+cd build
+# meson configure -Dnon_glibc=true
+# meson configure -Dshitty_sandboxing=true
+ninja
+sudo ninja install
+z 
+ranger
+:q
+t
+tmux
+clear
+git status -s
+ls autostart/
+cd autostart/
+ls
+cd ..
+rm autostart/
+rm -r autostart/
+clear
+ls
+git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD -n 25 | lines | split column "»¦«" commit subject name email date | upsert date {|d| $d.date | into datetime} | sort-by date
+clear
+t
+ranger
+z nvim
+cd .config/nvim
+ls
+nvim 
+nvim
+clear
+nvim .
+ls
+:q
+nvim .
+git config --global user.name "alisohub"
+git config --global user.email "aliso@github.com"
+nvim .
+tmux source ~/.tmux.conf
+t
+vim .tmux.conf
+nvim .
+t
+ranger
+clear
+cd Downloads/
+ls
+rm -r libinput-config/
+clear
+tn watch
+^unzip --help
+unzip WindowsConcept11-Light.zip cursor
+unzip WindowsConcept11-Light.zip cursor/
+ls
+unzip WindowsConcept11-Light.zip
+ls
+clear
+cd WindowsConcept11_Light/
+ls
+cd ..
+la | find icons
+mkdir .cions
+mkdir .icons
+rm -r .cions
+la | find icons
+cd .icons
+cd ..
+mv WindowsConcept11_Light/ win_cursor/
+ls
+ls win_cursor/
+mv win_cursor/ ~/.icons/win_cursor/
+ls
+cd win_cursor/
+ls
+t Downloads/
+inxi -Gxx | grep compositor
+sudo dnf install inxi
+inxi -Gxx | rg compositor
+sudo dnf remove inxi
+t
+mts valorant
+mts tarik
+cd Documents/
+ls
+cd ..
+cd Downloads/
+ls
+rm WindowsConcept11-Light.zip
+cd `Telegram Desktop/`
+clear
+cargo install emulsion
+em
+z dot
+emulsion backgroung.jpg
+sudo dnf install htop
+sudo dnf install hvtop -y
+sudo dnf install nvtop -y
+whereis joshuto
+which joshuto
+which -g
+which -h
+fzf
+ls
+la
+ls
+la
+ls
+mkdir fdsfds
+cd fdsfds/
+touch fdsfds.txt
+cd ..
+fzf
+cd .dotfiles/
+fzf
+cd alacritty/
+fzf
+cd ..
+fzf
+fzf -a
+fzf --help
+man fzf | find hidden
+fzf --hidden
+sk
+cargo install skim
+sk
+cd ..
+sk
+z dot
+z fds
+touch fdsfds.tx
+cd ..
+sk
+git restore .
+git status
+rm -r fdsfds/
+t
+clear
+sk
+nvim .
+sudo dnf remove fzf
+fzf
+t
+whereis -h
+whereis -s t
+whereis -l t
+whereis -h
+whereis -f t
+whereis -B t
+[preview]
+max_preview_size = 2097152 # 2MB
+t
+tmux source ~/.tmux.conf
+t
+sk --border
+sk --border "fdsfsd"
+sk --border-lable "fdsfsd"
+sk --border-label "fdsfsd"
+sk --border -h
+sk --border 
+sk --border fds
+clear 
+t
+tmux
+cd downloads
+cd Downloads/
+ls
+which sk-tmux
+whereis sk-tmux
+t
+tmux
+ls
+mv sk-tmux ~/.cargo/bin
+ls ~/.cargo/
+ls ~/.cargo/bin/ | find sk
+sudo t
+tmux a
+ranger
+chmod +x (ls ~/.cargo/bin/ | find sk-tmux)
+chmod +x /home/aliso/.cargo/bin/sk-tmux
+vim /home/aliso/.tmux/plugins/t-smart-tmux-session-manager/bin/t
+tmux a
+rm /home/aliso/.cargo/bin/sk-tmux
+sudo dnf install fzf
+fzf
+cd personal/
+nvim dnf.conf
+cd ..
+fzf
+clear
+git status
+nvim
+clear
+tmux source ~/.tmux.conf
+cargo install tmux-sessionizer
+ms
+tms
+tmx config
+tms config
+tms config --full-path
+tms config --full-path true
+git status -s
+tms config
+tms config --help
+tms config -p
+clear
+tmux-sessionizer
+tms
+tms config
+zoxide --help
+zoxide query
+zoxide edit
+tms config
+tms config -s
+cargo remove tms
+cargo uninstall tms
+cargo uninstall tmux-sessionizer
+clear
+t tele
+z tele
+clear
+t
+t
+clear
+t
+whereis t
+z t-sma
+ranger
+t
+clear
+f 
+ft
+z nushell
+ls
+nvim .
+clear
+git status
+t tmux
+f tmux
+f
+f tmux
+clear
+f tmux
+f dot
+cd nushell/
+cd .config/
+cd nushell/
+clear
+f  
+f nushell
+cd ..
+ cd..
+f dot
+cd tmux
+sk
+cd .config/
+clear
+nvim .tmux.conf
+:q
+clear
+ft
+cd ..
+clear
+t nushe
+f nushe
+touch ft
+nvim ft
+ft 321
+mv ft fdddd
+fdddd 21
+chmod +x fdddd
+fdddd 21
+ranger
+ft
+fdddd 21
+~/.dotfiles/nushell/.config/nushell/fdddd 21
+~/.dotfiles/nushell/.config/nushell/ftddd
+~/.dotfiles/nushell/.config/nushell/ftdddd
+~/.dotfiles/nushell/.config/nushell/ftddd
+~/.dotfiles/nushell/.config/nushell/ftddd 2
+~/.dotfiles/nushell/.config/nushell/fdddd
+nvim .
+~/.dotfiles/nushell/.config/nushell/fdddd
+nvim .
+~/.dotfiles/nushell/.config/nushell/fdddd
+nvim .
+sed
+clear
+nvim .
+nvim fdddd
+pwd | sed 's/.*\///g'
+nvim fdddd
+~/.dotfiles/nushell/.config/nushell/fdddd
+nvim fdddd
+~/.dotfiles/nushell/.config/nushell/fdddd
+nvim fdddd
+~/.dotfiles/nushell/.config/nushell/fdddd
+nvim fdddd
+~/.dotfiles/nushell/.config/nushell/fdddd
+nvim fdddd
+~/.dotfiles/nushell/.config/nushell/fdddd
+pwd | sed 's/.*\///g'
+'dsdfs' | sed 's/.*\///g'
+nvim fdddd
+touch e123
+chmod +x e123
+nvim e123
+~/.dotfiles/nushell/.config/nushell/e123
+ranger
+~/.dotfiles/nushell/.config/nushell/e123 f
+~/.dotfiles/nushell/.config/nushell/e123
+clear
+nu
+tmux a
+f nushe
+~/.dotfiles/nushell/.config/nushell/e123
+chmod +x ~/.dotfiles/nushell/.config/nushell/e123
+~/.dotfiles/nushell/.config/nushell/e123
+nvim .dotfiles/nushell/.config/nushell
+cd .dotfiles/nushell/.config/nushell
+ls
+ls -a
+ls -lf
+.e123
+e123
+fdddd
+~/.dotfiles/nushell/.config/nushell/fdddd
+~/.dotfiles/nushell/.config/nushell/e123
+nvim fdddd
+~/.dotfiles/nushell/.config/nushell/fdddd
+tmux
+nvim ~/.dotfiles/nushell/.config/nushell/fdddd
+~/.dotfiles/nushell/.config/nushell/fdddd
+f nushe
+mv fdddd ft
+ls
+nvim nu-config.nu
+f  
+ls
+ls a
+la
+clear
+la | .local
+clear
+cd .local
+ls
+cd ..
+ls
+ranger
+f nushell
+tn
+ls
+mv ft ~/.dotfiles/bin/.local/bin/ft
+mkdir ~/.dotfiles/bin/.local/bin/
+ranger
+mv ft ~/.dotfiles/bin/.local/bin/ft
+ls
+rm e123
+clear
+nvim .
+clear
+f dot
+env.$HOME
+echo env.$HOME
+$HOME
+clear
+stow -t $HOME -v bin 
+clear
+nvim ,
+sudo dnf remove fzf
+nvim .
+sk
+:q
+f dot
+ft dot
+bash
+clear
+ft
+whereis ft
+cd bin
+cd .colcd bin
+cd .lo
+cd .local/
+cd bin
+clear
+ls
+nvim ft
+ft _dotfiles
+nvim 
+nvim ft
+git status
+nvim .
+clear
+ft
+f tmux
+nvim .tmux.conf
+ft
+clear
+tmux a
+clear
+cd ..
+git remote add origin https://github.com/alisohub/.dotfiles.git
+git branch -M main
+git push -u origin main
+clear
+fnushe
+f nushe
+nvim nu-config.nu
+_zoxide
+__zoxide_z
+f nushe
+nvim nu-config.nu
+touch --hel
+touch --help
+touch mts
+chmod +x mts
+mts
+nvim nu-config.nu
+rm mts
+clear
+git status -s
+clear
+gs
+git status -s
+clear
+f nushe
+nvim nu-config.nu
+js
+nvim nu-config.nu
+js
+cd .config
+cd joshuto/
+ls -lf
+js
+chmod +x preview_file.sh
+./preview_file.sh
+js
+f jos
+nvim .
+f jos
+nvim .
+ala
+f jos
+nvim .
+js
+git clone https://github.com/kamiyaa/joshuto.git
+nvim .
+mv joshuto/config/ .
+ls
+mv config/* .
+ls
+rm -r config/ joshuto/
+ls
+clear
+js
+f jos
+ls
+rm keymap.toml
+rm bookmarks.toml
+js
+rm theme.toml
+ls
+js
+f jos
+js
+ls -lf
+./preview_file.sh joshuto.toml
+./preview_file.sh
+./preview_file.sh ~/.config/joshuto/joshuto.toml
+js -h
+sudo dnf install gnome-shell-extension
+sudo dnf search gnome-shell-extension
+sudo dnf install gnome-shell-extension-apps-menu
+ft fdsfsd fdsfds
+ft wwwwwwww ffffff ddddd
+clear
+sudo dnf update
+sudo dnf install ranger
+ranger
+f dot
+ nvim .
+cargo uninstall joshuto
+sudo dnf remove joshuto
+clear
+rr
+ranger --copy-config=rifle.conf
+f dot
+ft
+f nushe
+f bin
+cd .local/
+cd bin/
+nvim ft
+ft
+df
+ft
+f dot
+ft
+f bin
+nvim nvim
+nvim ft
+ft
+nvim ft
+ft 
+f dot
+ft 
+f bin
+nvim ft
+ft
+f dot
+ft
+tmux a -t .dotfiles
+:q
+nu
+nu
+nu
+nu
+tmux a -t _dotfiles
+clear
+f bin
+nvim ft
+f dot
+ft
+nvim ft
+f bin
+nvim ft
+clear
+mkdir ranger/.config/ranger
+cd ranger/.config/ranger/
+nvim rfile.conf
+f dot
+stow -t /home/aliso -v ranger
+rr
+nvim .bashrc
+$env.EDITOR
+f dot
+rr
+f nushe
+nvim .
+$config.buffer_editor
+$env.EDITOR
+echo ($env.EDITOR)
+f nushe
+nvim .
+config nu
+f nushe
+nvim .
+config nu
+q
+clear
+f nushe
+nvim
+clear
+tmux kill-ser
+f dot
+rr
+f ranger
+nvim rfile.conf
+rr
+clear
+ft
+rr
+:q
+q
+clear
+hello
+clear
+mts tarik ; echo 15:45
+echo time
+nvim
+clear
+tmux a
+f nvim
+nvim .
+clear
+nvim .
+clear
