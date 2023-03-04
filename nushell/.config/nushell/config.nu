@@ -655,7 +655,12 @@ def mts [name: string] {
   streamlink --twitch-disable-ads $"https://twitch.tv/($name)" best --player mpv
 }
 
+def myv [name: string] {
+    yt-dlp -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
+}
+
 alias f = __zoxide_z
+alias ta = tmux a
 alias rr = ranger
 alias vim = nvim
 alias cat = bat --wrap=never
