@@ -31,3 +31,9 @@ vim.opt.updatetime = 50
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
+
+
+vim.api.nvim_command('augroup netrw_mappings')
+vim.api.nvim_command('autocmd!')
+vim.api.nvim_command('autocmd FileType netrw nunmap <buffer> <c-l>')
+vim.api.nvim_command('augroup END')
