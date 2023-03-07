@@ -651,10 +651,19 @@ let-env config = {
   ]
 }
 
-def mts [name: string] {
-  streamlink --twitch-disable-ads $"https://twitch.tv/($name)" best --player mpv
+def mts [name: string, quality?: int] {
+    if ($quality == null) {
+        streamlink --twitch-disable-ads $"https://twitch.tv/($name)" best --player mpv
+    } else {
+        try {
+            streamlink --twitch-disable-ads $"https://twitch.tv/($name)" $"(quality)p60" --player mpv
+        } catch {
+            streamlink --twitch-disable-ads $"https://twitch.tv/($name)" $"($quality)p" --player mpv
+        }
+    }
 }
 
+# TODO: add quality option
 def myv [name: string] {
     yt-dlp -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
 }
