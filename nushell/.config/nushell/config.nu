@@ -651,15 +651,11 @@ let-env config = {
   ]
 }
 
-def mts [name: string, quality?: int] {
+def mts [name: string, quality?: string] {
     if ($quality == null) {
         streamlink --twitch-disable-ads $"https://twitch.tv/($name)" best --player mpv
     } else {
-        try {
-            streamlink --twitch-disable-ads $"https://twitch.tv/($name)" $"(quality)p60" --player mpv
-        } catch {
-            streamlink --twitch-disable-ads $"https://twitch.tv/($name)" $"($quality)p" --player mpv
-        }
+        streamlink --twitch-disable-ads $"https://twitch.tv/($name)" $quality --player mpv
     }
 }
 
