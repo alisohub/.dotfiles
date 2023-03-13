@@ -665,6 +665,7 @@ def myv [name: string] {
 }
 
 alias f = __zoxide_z
+alias show = emulsion 
 alias ta = tmux a
 alias rr = ranger
 alias vim = nvim
