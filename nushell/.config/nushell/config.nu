@@ -659,7 +659,8 @@ def wyt [name: string, quality?: string, --youtube (-y), --twitch (-t)] {
             streamlink --twitch-disable-ads $"https://twitch.tv/($name)" $quality --player mpv
         }
     } else if $youtube {
-        yt-dlp -f $'($quality)+251' -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
+        let y_quality = ((yt-dlp -F $'https://www.youtube.com/watch?v=($name)'  | rg 'webm .* 1080p' ) | sed 's/^\([0-9]*\).*/\1/')
+        yt-dlp -f $'($y_quality)+251' -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
     }
 }
 
