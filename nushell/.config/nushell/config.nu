@@ -651,16 +651,16 @@ let-env config = {
   ]
 }
 
-def mts [name: string, quality?: string] {
-    if ($quality == null) {
-        streamlink --twitch-disable-ads $"https://twitch.tv/($name)" best --player mpv
-    } else {
-        streamlink --twitch-disable-ads $"https://twitch.tv/($name)" $quality --player mpv
+def wyt [name: string, quality?: string, --youtube (-y), --twitch (-t)] {
+    if $twitch {
+        if ($quality == null) {
+            streamlink --twitch-disable-ads $"https://twitch.tv/($name)" best --player mpv
+        } else {
+            streamlink --twitch-disable-ads $"https://twitch.tv/($name)" $quality --player mpv
+        }
+    } else if $youtube {
+        yt-dlp -f '248+251' -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
     }
-}
-
-def myv [name: string] {
-    yt-dlp -f '248+251' -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
 }
 
 alias f = __zoxide_z
