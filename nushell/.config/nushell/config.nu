@@ -659,9 +659,8 @@ def mts [name: string, quality?: string] {
     }
 }
 
-# TODO: add quality option
 def myv [name: string] {
-    yt-dlp -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
+    yt-dlp -f '248+251' -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
 }
 
 alias f = __zoxide_z
