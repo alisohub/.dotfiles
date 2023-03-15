@@ -659,8 +659,19 @@ def wyt [name: string, quality?: string, --youtube (-y), --twitch (-t)] {
             streamlink --twitch-disable-ads $"https://twitch.tv/($name)" $quality --player mpv
         }
     } else if $youtube {
-        let y_quality = ((yt-dlp -F $'https://www.youtube.com/watch?v=($name)'  | rg 'webm .* 1080p' ) | sed 's/^\([0-9]*\).*/\1/')
-        yt-dlp -f $'($y_quality)+251' -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
+
+        try {
+            if ($quality == null) {
+                let y_quality = ((yt-dlp -F $'https://www.youtube.com/watch?v=($name)'  | rg 'webm .* 1080p' ) | sed 's/^\([0-9]*\).*/\1/')
+                yt-dlp -f $'($y_quality)+251' -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
+            } else {
+                let y_quality = ((yt-dlp -F $'https://www.youtube.com/watch?v=($name)'  | rg $'webm .* ($quality)' ) | sed 's/^\([0-9]*\).*/\1/')
+                yt-dlp -f $'($y_quality)+251' -o - $"https://www.youtube.com/watch?v=($name)" | mpv -
+            }
+        } catch {
+            echo 'AVAILABLE OPTIONS FOR VIDEO-QUALITY:' 
+            echo (yt-dlp -F $'https://www.youtube.com/watch?v=($name)' | rg '[0-9]+p.*webm_dash')
+        }
     }
 }
 
