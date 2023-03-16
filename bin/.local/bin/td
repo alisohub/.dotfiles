@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# If no arguments are passed, find the last modified file in MDT_DIR and run mdt with -i option
+if [ $# -eq 0 ]; then
+    last_modified_file=$(find "$MDT_DIR" -type f -printf '%T@ %p\n' | sort -n | tail -1 | awk '{print $2}')
+    if [ -n "$last_modified_file" ]; then
+        mdt -i "$last_modified_file"
+    else
+        echo "No files found in MDT_DIR"
+    fi
+else
+    # Run mdt with provided arguments
+    mdt "$@"
+fi
