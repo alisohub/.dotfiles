@@ -4,8 +4,8 @@
 if [ $# -eq 0 ]; then
     # Use the find command to locate files in the specified directory, 
     # sort them by modification time, and return the most recently modified file
-    last_modified_file=$(find "$MDT_DIR" -type f -printf '%T@ %p\n' | sort -n | tail -1 | awk '{print $2}')
-    
+    last_modified_file=$(find "$MDT_DIR" -type f -name '*.md' -printf '%T@ %p\n' | sort -n | tail -1 | awk '{print $2}')
+
     # If a file was found, remove the .md extension from its name and print it to the console
     # Run mdt with the -i option to open the file in interactive mode
     if [ -n "$last_modified_file" ]; then
