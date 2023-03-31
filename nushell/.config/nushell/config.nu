@@ -677,6 +677,7 @@ def wyt [name: string, quality?: string, --youtube (-y), --twitch (-t)] {
 
 old-alias f = __zoxide_z 
 alias ta = tmux a
+alias live = live-server
 alias rr = ranger
 alias vim = nvim
 alias cat = bat --wrap=never
