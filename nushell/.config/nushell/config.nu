@@ -676,7 +676,6 @@ def wyt [name: string, quality?: string, --youtube (-y), --twitch (-t)] {
 }
 
 old-alias f = __zoxide_z 
-alias show = emulsion 
 alias ta = tmux a
 alias rr = ranger
 alias vim = nvim
