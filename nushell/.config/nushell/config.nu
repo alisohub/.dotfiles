@@ -675,6 +675,14 @@ def wyt [name: string, quality?: string, --youtube (-y), --twitch (-t)] {
     }
 }
 
+def itype [words?: int] {
+    if ($words != null) {
+        ttyper -w $words --language-file ~/.dotfiles/.typer
+    } else {
+        ttyper -w 30 --language-file ~/.dotfiles/.typer
+    }
+}
+
 old-alias f = __zoxide_z 
 alias ta = tmux a
 alias live = live-server
@@ -684,33 +692,6 @@ alias cat = bat --wrap=never
 alias la = ls -la
 alias :q = cowsay --aurora --bold noob
 alias :wq = cowsay --aurora --bold noob
-alias ttyperl = echo '
-| name               |                         description |
-| :----------------- | ----------------------------------: |
-| `c`                |          The C programming language |
-| `csharp`           |         The C# programming language |
-| `english100`       |       100 most common English words |
-| `english200`       |       200 most common English words |
-| `english1000`      |      1000 most common English words |
-| `english-advanced` |              Advanced English words |
-| `english-pirate`   |       50 pirate speak English words |
-| `german`           |        207 most common German words |
-| `german1000`       |       1000 most common German words |
-| `german10000`      |      10000 most common German words |
-| `go`               |         The Go programming language |
-| `html`             |           HyperText Markup Language |
-| `java`             |       The Java programming language |
-| `javascript`       | The Javascript programming language |
-| `norwegian`        |     200 most common Norwegian words |
-| `php`              |        The PHP programming language |
-| `portuguese`       |    100 most common Portuguese words |
-| `python`           |     The Python programming language |
-| `qt`               |                The QT GUI framework |
-| `ruby`             |       The Ruby programming language |
-| `rust`             |       The Rust programming language |
-| `spanish`          |       100 most common Spanish words |
-| `ukrainian`        |     100 most common Ukrainian words |
-'
 
 source ~/.zoxide.nu
 source ~/.cache/starship/init.nu
