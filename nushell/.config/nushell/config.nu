@@ -651,7 +651,7 @@ let-env config = {
   ]
 }
 
-def wyt [name: string, quality?: string, --youtube (-y), --twitch (-t)] {
+def iwatch [name: string, quality?: string, --youtube (-y), --twitch (-t)] {
     if $twitch {
         if ($quality == null) {
             streamlink --twitch-disable-ads $"https://twitch.tv/($name)" best --player mpv
