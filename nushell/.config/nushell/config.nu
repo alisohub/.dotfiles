@@ -561,11 +561,19 @@ def iwatch [name: string, quality?: string, --youtube (-y), --twitch (-t)] {
     }
 }
 
-def itype [words?: int] {
+def itype [words?: int, --file (-f): string] {
     if ($words != null) {
-        ttyper -w $words --language-file ~/.dotfiles/.typer
+        if ($file != null) {
+            ttyper -w $words --language-file ($file | sd '~' $env.HOME)
+        } else {
+            ttyper -w $words --language-file ~/.dotfiles/.typer
+        }
     } else {
-        ttyper -w 30 --language-file ~/.dotfiles/.typer
+        if ($file != null) {
+            ttyper -w 30 --language-file ($file | sd '~' $env.HOME)
+        } else {
+            ttyper -w 30 --language-file ~/.dotfiles/.typer
+        }
     }
 }
 
