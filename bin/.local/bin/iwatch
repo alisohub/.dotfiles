@@ -1,0 +1,43 @@
+#!/bin/bash
+
+while [[ $# -gt 0 ]]
+do
+    key="$1"
+    case $key in
+        -y|--youtube)
+        service="youtube"
+        shift
+        ;;
+        -t|--twitch)
+        service="twitch"
+        shift
+        ;;
+        -q|--quality)
+        quality="$2"
+        shift
+        shift
+        ;;
+        *)
+        name="$1"
+        shift
+        ;;
+    esac
+done
+
+if [[ $service == "twitch" ]]; then
+    if [[ -z $quality ]]; then
+        streamlink --twitch-disable-ads "https://twitch.tv/$name" best --player mpv
+    else
+        streamlink --twitch-disable-ads "https://twitch.tv/$name" $quality --player mpv
+    fi
+elif [[ $service == "youtube" ]]; then
+    if [[ -z $quality ]]; then
+        y_quality=$(yt-dlp -F "https://www.youtube.com/watch?v=$name" | rg 'webm .* 1080p' | sed 's/^\([0-9]*\).*/\1/')
+        yt-dlp -f "$y_quality+251" -o - "https://www.youtube.com/watch?v=$name" | mpv -
+    else
+        y_quality=$(yt-dlp -F "https://www.youtube.com/watch?v=$name" | rg "webm .* $quality" | sed 's/^\([0-9]*\).*/\1/')
+        yt-dlp -f "$y_quality+251" -o - "https://www.youtube.com/watch?v=$name" | mpv -
+    fi
+else
+    echo "Invalid service"
+fi
