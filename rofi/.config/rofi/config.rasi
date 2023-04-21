@@ -1,0 +1,7 @@
+/** Basic config file **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+}
+@theme "/home/aliso/.local/share/rofi/themes/windows11-list-dark.rasi"
