@@ -1,0 +1,3 @@
+#! /usr/bin/bash
+
+find ~ -type f \( -name "*.pdf" -o -name "*.epub" -o -name "*.ps" -o -name "*.eps" -o -name "*.xps" -o -name "*.djv" -o -name "*.djvu" \) -exec basename {} \; | rofi -dmenu -i -p 'zathura' -theme '~/.config/rofi/colors/seldoc.rasi' | xargs -I{} sh -c 'find ~ -type f \( -name "*.pdf" -o -name "*.epub" -o -name "*.ps" -o -name "*.eps" -o -name "*.xps" -o -name "*.djv" -o -name "*.djvu" \) -name "{}" -print -quit' | xargs -I{} sh -c "zathura '{}'"
