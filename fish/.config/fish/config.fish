@@ -9,7 +9,7 @@ alias live="live-server"
 alias rr="ranger"
 alias vim="nvim"
 alias cat="bat --wrap=never"
-alias la="ls -la"
+alias ls="exa"
 
 zoxide init fish | source
 starship init fish | source
