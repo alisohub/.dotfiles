@@ -29,8 +29,10 @@ set $rofi_cmd rofi \
 # Shows a combined list of the applications with desktop files and
 # executables from PATH.
 # TODO: add window with the next release of rofi-wayland
+
 set $menu $rofi_cmd -show drun
-set $menu1 $rofi_cmd -show run
+set $run $rofi_cmd -show run
+set $window $rofi_cmd -show window
 
 ### Output configuration
 #
@@ -72,7 +74,7 @@ output * bg /home/aliso/Pictures/retro-gaming-1920×1080.jpg fill
 # Read `man 5 sway-input` for more information about this section.
 
 ### Key bindings
-
+    # Zathura documents
     bindsym $mod+z exec '~/.local/bin/seldoc'
 
 #
@@ -86,7 +88,8 @@ output * bg /home/aliso/Pictures/retro-gaming-1920×1080.jpg fill
 
     # Start your launcher
     bindsym $mod+d exec $menu
-    bindsym $mod+Shift+d exec $menu1
+    bindsym $mod+Shift+d exec $run
+    bindsym Alt+Tab exec $window
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
