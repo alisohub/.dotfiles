@@ -1,7 +1,9 @@
 if status is-interactive
+    set -x EDITOR /usr/bin/nvim
     # Commands to run in interactive sessions can go here
 end
 fish_hybrid_key_bindings
+
 
 alias f="__zoxide_z"
 alias ta="tmux a"
