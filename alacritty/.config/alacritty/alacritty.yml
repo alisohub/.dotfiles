@@ -97,6 +97,3 @@ schemes:
       white:      '0xffffff'
       
 colors: *tokyo-night 
-
-key_bindings:
-  - { key: F, mods: Super, chars: "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" }
