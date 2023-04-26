@@ -5,7 +5,7 @@ end
 fish_hybrid_key_bindings
 
 
-alias f="__zoxide_z"
+alias t="__zoxide_z"
 alias ta="tmux a"
 alias live="live-server"
 alias rr="ranger"

@@ -1,6 +1,6 @@
 input "1:1:AT_Translated_Set_2_keyboard" {
   xkb_layout us,ua
-  xkb_variant ,
+  xkb_variant dvp,
   xkb_options grp:win_space_toggle
   xkb_model pc105
   repeat_delay 300
