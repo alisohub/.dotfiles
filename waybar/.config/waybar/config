@@ -1,7 +1,7 @@
 {
     "height": 28, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
-    "modules-left": ["custom/logo"],
+    "modules-left": ["custom/logo", "tray"],
     "modules-center": ["sway/mode", "sway/workspaces", "sway/scratchpad"],
     "modules-right": ["battery", "sway/language", "clock"],
     "sway/workspaces": {
@@ -41,6 +41,10 @@
     },
     "sway/language": {
         "tooltip": false 
+    },
+    "tray": {
+        "icon-size": 1,
+        "spacing": 150
     },
     "clock": {
         // "timezone": "America/New_York",
