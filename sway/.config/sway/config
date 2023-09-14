@@ -6,7 +6,7 @@
 
 assign [app_id="com.github.wwmm.easyeffects"] workspace 8
 exec swaymsg "exec easyeffects;"
-exec swaymsg "exec gammastep -t 6500:4800;"
+exec swaymsg "exec wlsunset -t 4500 -s 20:00;"
 
 ### Variables
 #
@@ -38,7 +38,7 @@ set $window $rofi_cmd -show window
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /home/aliso/Pictures/retro-gaming-1920×1080.jpg fill
+output * bg /home/aliso/Pictures/agzfm7waq3p51.jpg fill
 #
 # Example configuration:
 #
