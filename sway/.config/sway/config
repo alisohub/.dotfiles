@@ -6,7 +6,7 @@
 
 assign [app_id="com.github.wwmm.easyeffects"] workspace 8
 exec swaymsg "exec easyeffects;"
-exec swaymsg "exec wlsunset -t 4500 -s 20:00;"
+exec swaymsg "exec wlsunset -t 4500 -s 20:00 -S 06:30;"
 
 ### Variables
 #
