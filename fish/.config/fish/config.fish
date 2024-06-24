@@ -4,7 +4,6 @@ if status is-interactive
 end
 fish_hybrid_key_bindings
 
-
 alias t="__zoxide_z"
 alias ta="tmux a"
 alias live="live-server"
