@@ -8,7 +8,6 @@ alias t="__zoxide_z"
 alias ta="tmux a"
 alias live="live-server"
 alias vim="nvim"
-alias cat="bat --wrap=never"
 alias ls="exa"
 
 zoxide init fish | source
