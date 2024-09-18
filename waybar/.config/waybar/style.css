@@ -1,5 +1,11 @@
 * {
-    font-family: FiraCode Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family:
+        FiraCode Nerd Font,
+        FontAwesome,
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
     font-weight: bold;
     font-size: 15px;
 }
@@ -8,13 +14,13 @@ window#waybar {
     background-color: rgba(0, 0, 0, 0.1);
     color: #ffffff;
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 }
 
 #custom-logo {
-  background-image: url('/home/aliso/.config/waybar/fedora.svg');
-  background-repeat: no-repeat;
-  background-size: contain; 
+    background-image: url("/home/aliso/.config/waybar/fedora.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 button {
@@ -46,7 +52,7 @@ button:hover {
 }
 
 #mode {
-    color: #64727D;
+    color: #64727d;
 }
 
 #clock,
@@ -57,7 +63,6 @@ button:hover {
     padding: 0 3px;
     color: #ffffff;
 }
-
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
@@ -78,8 +83,9 @@ button:hover {
     color: #ffffff;
 }
 
-#battery.charging, #battery.plugged {
-    color: #26A65B;
+#battery.charging,
+#battery.plugged {
+    color: #26a65b;
 }
 
 @keyframes blink {
@@ -118,9 +124,9 @@ button:hover {
 }
 
 #scratchpad {
-   background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
 
 #scratchpad.empty {
-	background-color: transparent;
+    background-color: transparent;
 }
