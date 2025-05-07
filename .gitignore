@@ -1,0 +1,6 @@
+bin/.local/bin
+!bin/.local/bin/iwatch
+!bin/.local/bin/mdt
+!bin/.local/bin/screenshot
+!bin/.local/bin/seldoc
+!bin/.local/bin/tt

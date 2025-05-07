@@ -10,5 +10,7 @@ alias live="live-server"
 alias vim="nvim"
 alias ls="exa"
 
+fish_add_path -g -p ~/development/flutter/bin
+
 zoxide init fish | source
 starship init fish | source
