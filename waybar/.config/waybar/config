@@ -12,8 +12,8 @@
           "urgent": "",
           "focused": "",
           "default": ""
-      }, 
-      "persistent_workspaces": {
+      },
+      "persistent-workspaces": {
           "1": [],
           "2": [],
           "3": [],
@@ -40,7 +40,7 @@
         "tooltip-format": "{app}: {title}"
     },
     "sway/language": {
-        "tooltip": false 
+        "tooltip": false
     },
     "tray": {
         "icon-size": 1,
@@ -61,4 +61,3 @@
         "format-alt": "{time} {icon}",
     },
 }
-
