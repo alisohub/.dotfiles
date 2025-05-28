@@ -1,5 +1,6 @@
 require("aliso.set")
 require("aliso.remap")
+require("aliso.lazy_init")
 
 -- -- Define the quit function
 -- function quit()

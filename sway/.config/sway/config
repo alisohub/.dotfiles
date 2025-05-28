@@ -219,7 +219,7 @@ bindsym $mod+r mode "resize"
 
 default_border pixel 1
 default_floating_border none
-font pango:monospace 0
+font pango:monospace 1
 titlebar_padding 1
 titlebar_border_thickness 0
 
