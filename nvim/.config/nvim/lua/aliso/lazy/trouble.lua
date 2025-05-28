@@ -15,7 +15,7 @@ return {
             use_diagnostic_signs = false -- enabling this will use the signs defined in your lsp client
         }
 
-        vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle workspace_diagnostics<cr>",
+        vim.keymap.set("n", "<leader>xq", "<cmd>Trouble<cr>",
             { silent = true, noremap = true }
         )
     end,
