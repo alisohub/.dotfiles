@@ -9,6 +9,7 @@ exec swaymsg "exec easyeffects;"
 # assign [app_id=""] move scratchpad
 # exec swaymsg "exec easyeffects;"
 exec swaymsg "exec wlsunset -t 4500 -s 21:30 -S 06:30;"
+exec swaymsg "exec wl-clip-persist --clipboard regular;"
 
 ### Variables
 #
