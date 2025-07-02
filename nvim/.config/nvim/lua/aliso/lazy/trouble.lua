@@ -2,7 +2,6 @@ return {
     "folke/trouble.nvim",
     config = function()
         require("trouble").setup {
-            icons = false,
             fold_open = "v",      -- icon used for open folds
             fold_closed = ">",    -- icon used for closed folds
             indent_lines = false, -- add an indent guide below the fold icons
