@@ -6,7 +6,6 @@ fish_hybrid_key_bindings
 
 alias t="__zoxide_z"
 alias ta="tmux a"
-alias live="live-server"
 alias vim="nvim"
 alias ls="exa"
 
