@@ -1,0 +1,16 @@
+## vim: set fenc=utf-8 ts=4 sw=0 sts=0 sr et si tw=0 fdm=marker fmr={{{,}}}:
+##
+## Swaylock config by Andy3153
+## created   26/08/22 ~ 14:04:17
+##
+
+ignore-empty-password
+show-failed-attempts
+daemonize
+#indicator-idle-visible
+show-keyboard-layout
+color=000000
+image=~/.config/swaylock/wallpaper.jpg
+font=Iosevka Term
+font-size=12
+scaling=fill
