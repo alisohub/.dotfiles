@@ -1,10 +1,5 @@
 ## Fedora 42(Sway Spin)
 
-### Personal
-```
-sudo dnf install meson systemd-devel libinput-devel
-```
-
 ### Essential
 ```
 sudo dnf install allacrity fish neovim rofi tmux zathura zoxide exa starship
@@ -19,5 +14,5 @@ sudo dnf install allacrity fish neovim rofi tmux zathura zoxide exa starship
     - ``` sudo dnf install p7zip ```
 - mpv
     - ``` sudo dnf install mpv ```
-- sway-input-config
+- [sway-input-config](https://github.com/Sunderland93/sway-input-config)
 - [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)

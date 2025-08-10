@@ -1,0 +1,42 @@
+{
+  "keyboard-use-settings": "true",
+  "keyboard-layout": [
+    "us",
+    "ua"
+  ],
+  "keyboard-variant": [
+    "dvorak",
+    ""
+  ],
+  "keyboard-shortcut": "grp:win_space_toggle",
+  "keyboard-identifier": "1:1:AT_Translated_Set_2_keyboard",
+  "keyboard-model": "pc105",
+  "keyboard-repeat-delay": 300,
+  "keyboard-repeat-rate": 40,
+  "keyboard-capslock": "disabled",
+  "keyboard-numlock": "disabled",
+  "pointer-use-settings": "true",
+  "pointer-identifier": "2:14:ETPS/2_Elantech_TrackPoint",
+  "pointer-accel-profile": "flat",
+  "pointer-pointer-accel": 0.1,
+  "pointer-natural-scroll": "false",
+  "pointer-scroll-factor": 1.0,
+  "pointer-left-handed": "disabled",
+  "pointer-middle-emulation": "disabled",
+  "touchpad-use-settings": "true",
+  "touchpad-identifier": "2:14:ETPS/2_Elantech_Touchpad",
+  "touchpad-accel-profile": "flat",
+  "touchpad-pointer-accel": 0.4,
+  "touchpad-natural-scroll": "enabled",
+  "touchpad-scroll-factor": 0.2,
+  "touchpad-scroll-method": "two_finger",
+  "touchpad-left-handed": "disabled",
+  "touchpad-tap": "enabled",
+  "touchpad-tap-button-map": "lrm",
+  "touchpad-drag": "enabled",
+  "touchpad-drag-lock": "disabled",
+  "touchpad-dwt": "disabled",
+  "touchpad-dwtp": "disabled",
+  "touchpad-events": "enabled",
+  "touchpad-middle-emulation": "disabled"
+}
