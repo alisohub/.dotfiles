@@ -9,7 +9,7 @@ while [ True ]; do
     state=$(echo $up | rg -oP 'state:\s+discharging')
 
     if [[ $percentage<20 && -n "$state" ]]; then
-        notify-send --urgency critical "Low battery!" "$percentage"
+        notify-send --urgency critical "Low battery!" "$percentage %"
     fi
 
     sleep 800 

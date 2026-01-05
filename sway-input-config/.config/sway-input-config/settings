@@ -38,5 +38,17 @@
   "touchpad-dwt": "disabled",
   "touchpad-dwtp": "disabled",
   "touchpad-events": "enabled",
-  "touchpad-middle-emulation": "disabled"
+  "touchpad-middle-emulation": "disabled",
+  "pointer-rotation-angle": "0.0",
+  "pointer-scroll-button": "BTN_MIDDLE",
+  "pointer-scroll-button-lock": "disabled",
+  "touchpad-click-method": "button_areas",
+  "touchpad-rotation-angle": "0.0",
+  "tablet-use-settings": "false",
+  "tablet-identifier": "",
+  "tablet-tool-mode": [
+    "*",
+    "absolute"
+  ],
+  "tablet-left-handed": "disabled"
 }
