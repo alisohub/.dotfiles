@@ -3,6 +3,7 @@ input "2:14:ETPS/2_Elantech_TrackPoint" {
   pointer_accel 0.1
   natural_scroll false
   scroll_factor 1.0
+  scroll_button BTN_MIDDLE
   left_handed disabled
   middle_emulation disabled
 }

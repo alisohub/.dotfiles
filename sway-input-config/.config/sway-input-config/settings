@@ -1,12 +1,11 @@
 {
   "keyboard-use-settings": "true",
   "keyboard-layout": [
-    "us",
+    "pl",
     "ua"
   ],
   "keyboard-variant": [
-    "dvorak",
-    ""
+    "dvorak_quotes"
   ],
   "keyboard-shortcut": "grp:win_space_toggle",
   "keyboard-identifier": "1:1:AT_Translated_Set_2_keyboard",

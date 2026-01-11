@@ -15,4 +15,5 @@ sudo dnf install allacrity fish neovim rofi tmux zathura zoxide exa starship
 - mpv
     - ``` sudo dnf install mpv ```
 - [sway-input-config](https://github.com/Sunderland93/sway-input-config)
+- [wayfreeze](https://github.com/Jappie3/wayfreeze)
 - [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)

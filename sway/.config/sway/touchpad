@@ -11,6 +11,6 @@ input "2:14:ETPS/2_Elantech_Touchpad" {
   drag enabled
   drag_lock disabled
   dwt disabled
-  dwtp disabled
   middle_emulation disabled
+  click_method button_areas
 }
